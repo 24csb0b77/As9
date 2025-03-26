@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html doc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <button id="toggleButton">Dark Mode</button>
+    <section>
+        <h2>Countdown Timer</h2>
+        <input type="number" id="timeInput" placeholder="Enter seconds" min="1">
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn" disabled>Pause</button>
+        <button id="resetBtn">Reset</button>
+        <div id="timerDisplay">00:00</div>
+    </section>
+
+   
+    <section>
+        <h2>List</h2>
+        <input type="text" id="listInput" placeholder="Add an item">
+        <button id="addItemBtn">Add Item</button>
+        <button id="sortListBtn">Sort Alphabetically</button>
+        <button id="filterListBtn">Filter Duplicates</button>
+        <button id="reverseListBtn">Reverse Order</button>
+        <ul id="list"></ul>
+    </section>
+
+    
+    <section>
+        <h2>Dynamic Table</h2>
+        <input type="text" id="tableInput" placeholder="Enter row data">
+        <button id="addRowBtn">Add Row</button>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h2>Image Gallery</h2>
+        <div id="gallery">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkUB9XeNo2hq5kxQeIiZfm1iDxGnJ6cADhPA&s" class="thumbnail" alt="Image 1">
+            <img src="https://plus.unsplash.com/premium_photo-1670537439541-d2eb20e1f6ce?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGltZSUyMGNsb2NrfGVufDB8fDB8fHww" class="thumbnail" alt="Image 2">
+            <img src="https://media.istockphoto.com/id/1447412479/vector/3d-time-and-clock-icon-clock-icon-in-trendy-flat-and-line-style-isolated-on-background-icons.jpg?s=612x612&w=0&k=20&c=nelUMnCUUBbWK_0Fl9o7g9PeeZmp5JColuk-_5hcFXc=" class="thumbnail" alt="Image 3">
+        </div>
+        <div id="lightbox" style="display: none;">
+            <span id="closeBtn">X</span>
+            <img id="largeImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkUB9XeNo2hq5kxQeIiZfm1iDxGnJ6cADhPA&s" alt="Large Image">
+        </div>
+    </section>
+</div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
